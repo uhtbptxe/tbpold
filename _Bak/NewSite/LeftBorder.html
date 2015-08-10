@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 FINAL//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Tau Beta Pi - University of Houston</TITLE>
+<BASE TARGET="_parent">
+<SCRIPT language="JavaScript">
+var img1 = new Image();
+var img2 = new Image();
+var img3 = new Image();
+var img4 = new Image();
+var img5 = new Image();
+var img6 = new Image();
+var img7 = new Image();
+
+function init() {
+	img1.src = "./CurrentEventsOn.jpg";
+	img2.src = "./ChapterOfficersOn.jpg";
+	img3.src = "./MembershipReqsOn.jpg";
+	img4.src = "./NationalOfficeOn.jpg";
+	img5.src = "./OtherLinksOn.jpg";
+	img6.src = "./ContactUsOn.jpg";
+	img7.src = "./Fall2000ResumesOn.jpg";
+}
+
+init();
+
+function highlight(img) {
+	document[img].src = img + "On.jpg";
+}
+
+function unhighlight(img) {
+	document[img].src = img + ".jpg";
+}
+</SCRIPT>
+</HEAD>
+
+</HTML>
+
+
+<BODY  BGCOLOR="#A71717" LINK="#990000" VLINK="#999933" TEXT="#000000" TOPMARGIN=0 LEFTMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0>
+	 <TABLE>
+	 <TR><TD VALIGN="CENTER" ALIGN="CENTER"><P ALIGN="center">
+	 <A HREF="./events.html" TARGET="body" onMouseOver="highlight('./CurrentEvents');"  onMouseOut="unhighlight('./CurrentEvents');"><IMG NAME="./CurrentEvents"  SRC="./CurrentEvents.jpg"  BORDER=0  ALT=" Current Events " ></A><BR>
+	 <A HREF="./officers.html" TARGET="body" onMouseOver="highlight('./ChapterOfficers');"  onMouseOut="unhighlight('./ChapterOfficers');"><IMG NAME="./ChapterOfficers"  SRC="./ChapterOfficers.jpg"  BORDER=0  ALT=" Chapter Officers " ></A><BR>
+	 <A HREF="./membership.html" TARGET="body" onMouseOver="highlight('./MembershipReqs');"  onMouseOut="unhighlight('./MembershipReqs');"><IMG NAME="./MembershipReqs"  SRC="./MembershipReqs.jpg"  BORDER=0  ALT=" Membership Requirements " ></A><BR>
+	 <A HREF="http://www.tbp.org" TARGET="body" onMouseOver="highlight('./NationalOffice');"  onMouseOut="unhighlight('./NationalOffice');"><IMG NAME="./NationalOffice" SRC="./NationalOffice.jpg"  BORDER=0  ALT=" National Office " ></A><BR>
+	 <A HREF="./links.html" TARGET="body" onMouseOver="highlight('./OtherLinks');"  onMouseOut="unhighlight('./OtherLinks');"><IMG NAME="./OtherLinks" SRC="./OtherLinks.jpg"  BORDER=0  ALT=" Other Links " ></A><BR>
+	 <A HREF="./mailto:tbp@egr.uh.edu" TARGET="body" onMouseOver="highlight('./ContactUs');"  onMouseOut="unhighlight('./ContactUs');"><IMG NAME="./ContactUs" SRC="./ContactUs.jpg"  BORDER=0  ALT=" Contact Us " ></A><BR>
+	 <A HREF="./resume.html" TARGET="body" onMouseOver="highlight('./Fall2000Resumes');"  onMouseOut="unhighlight('./Fall2000Resumes');"><IMG NAME="./Fall2000Resumes" SRC="./Fall2000Resumes.jpg"  BORDER=0  ALT=" Fall 2000 Resumes " ></A><BR></TD></TR></TABLE>
+</body>
+</HTML>

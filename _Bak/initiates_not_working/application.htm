@@ -1,0 +1,600 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>TBP - Initiate Form</title>
+</head>
+
+<style>
+INPUT {font-family:sans-serif; font-size:small;}
+INPUT.SUBMIT {font-family:san-serif; width:100;}
+</style>
+
+
+  
+<body bgcolor="#FFFFFF" text="#000000" link="#FF0000" vlink="#0000FF" onLoad="document.CatalogCard.ElecteeLastName.focus()">
+<h2 align="center"><font face="Arial, Helvetica, sans-serif"><img src="../Animation1.gif" width="75" height="75"><br>
+  Tau Beta Pi<br>
+  Texas Epsilon Candidate Application<br>
+  </font> </h2>
+<form action="http://www.houstonhomesearch.com/cgi-bin/submit.exe" method="post" name="CatalogCard">
+  <font face="Arial, Helvetica, sans-serif">
+  <input type="hidden" name="subject" value="Online Application">
+  <INPUT TYPE="HIDDEN" NAME="success" SIZE="-1" VALUE="http://www2.egr.uh.edu/~tbp/initiates/confirmation.htm">
+  <INPUT TYPE="HIDDEN" NAME="sendto" SIZE="-1" VALUE="rhorton2@bayou.uh.edu">
+  <INPUT TYPE="HIDDEN" NAME="host" SIZE="-1" VALUE="10.0.0.1">
+  </font>
+  <table border="1" cellspacing="1" cellpadding="1">
+    <tr> 
+      <td align="Right"><font face="Arial, Helvetica, sans-serif">Last Name: </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="ElecteeLastName" size="25" maxlength="30" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td align="Right"><font face="Arial, Helvetica, sans-serif">First & Middle 
+        Name: </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="ElecteeFirstName" size="25" maxlength="25" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td align="Right"><font face="Arial, Helvetica, sans-serif">Title: </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <select name="ElecteeTitle" size="1" onChange="IndicateChange();">
+          <option value="0" selected></option>
+          <option value="Q">Adm </option>
+          <option value="J">Assc Prof</option>
+          <option value="V">Capt </option>
+          <option value="P">Cmdr </option>
+          <option value="W">Col </option>
+          <option value="H">Dr </option>
+          <option value="N">Ens </option>
+          <option value="Y">Gen </option>
+          <option value="6">Gov </option>
+          <option value="O">LCdr </option>
+          <option value="U">Lt </option>
+          <option value="Z">Lt Col </option>
+          <option value="X">Maj </option>
+          <option value="A">Mr </option>
+          <option value="C">Mrs </option>
+          <option value="B">Ms </option>
+          <option value="I">Prof </option>
+          <option value="R">RAdm </option>
+          <option value="2">Rev </option>
+          <option value="3">Sr </option>
+        </select>
+        </font></td>
+    </tr>
+    <tr> 
+      <td align="Right"><font face="Arial, Helvetica, sans-serif">Trailer: </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <select name="ElecteeTrailer" size="1" onChange="IndicateChange();">
+          <option value="0"></option>
+          <option value="Q">Editor </option>
+          <option value="N">Esq </option>
+          <option value="7">Ex Dir </option>
+          <option value="E">II </option>
+          <option value="F">II PE </option>
+          <option value="G">III </option>
+          <option value="H">III PE </option>
+          <option value="I">IV </option>
+          <option value="J">IV PE </option>
+          <option value="A">Jr </option>
+          <option value="B">Jr PE </option>
+          <option value="U">MD </option>
+          <option value="M">PE </option>
+          <option value="V">PhD </option>
+          <option value="6">President</option>
+          <option value="C">Sr </option>
+          <option value="D">Sr PE </option>
+          <option value="W">ThD </option>
+          <option value="1">USA Ret </option>
+          <option value="2">USAF Ret </option>
+          <option value="3">USN Ret </option>
+          <option value="K">V </option>
+          <option value="L">V PE </option>
+        </select>
+        </font></td>
+    </tr>
+    <tr> 
+      <td align="Right"><font face="Arial, Helvetica, sans-serif">Email: </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif">
+        <input type="text" name="email">
+        <font color="#FF0000" size="-1">(has to be valid or data will not be saved)</font></font></td>
+    </tr>
+  </table>
+  <table border=1>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"><strong><u>Undergraduate and 
+        Graduate Section below:</u></strong></font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif">Presently studying for a(n) 
+        <select name="Degree" size="1" onChange="IndicateChange();">
+          <option value=""></option>
+          <option value="Bachelors" selected>Bachelors</option>
+          <option value="Masters">Masters</option>
+          <option value="Ph D">Ph D</option>
+        </select>
+        degree, expected to be obtained in 
+        <select name="ElectMonth" size="1" onChange="IndicateChange();">
+          <option value="" selected></option>
+          <option value=" 1"> 1</option>
+          <option value=" 2"> 2</option>
+          <option value=" 3"> 3</option>
+          <option value=" 4"> 4</option>
+          <option value=" 5"> 5</option>
+          <option value=" 6"> 6</option>
+          <option value=" 7"> 7</option>
+          <option value=" 8"> 8</option>
+          <option value=" 9"> 9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select name="ElecteeYear" size="1" onChange="IndicateChange();">
+          <option value="" selected></option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+        </select>
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table border=1>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"><strong><u>Alumnus and Eminent 
+        Engineer Section below:</u></strong></font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"> Year of first degree 
+        <input type="text" name="FirstDegreeYr" value="" size="4" maxlength="4" onfocus="this.select();" onChange="IndicateChange();">
+        from 
+        <input type="text" name="Institution" value="" size="50" maxlength="120" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table width=100% cellspacing="0" border=0>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"><strong>Gender:</strong>&nbsp;</font></td>
+      <td><font face="Arial, Helvetica, sans-serif">Female:&nbsp; 
+        <input type="radio" Name="GenderType" checked value="F" onClick="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif">Male:&nbsp; 
+        <input type="radio" name="GenderType" value="M" onClick="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;</font></td>
+      <td><font face="Arial, Helvetica, sans-serif"><strong>Date of Birth:</strong>&nbsp; 
+        <input type="text" name="BirthDate" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table width=100% cellspacing=1 border=0>
+    <tr> 
+      <th colspan="4" align="left"><font face="Arial, Helvetica, sans-serif">Home 
+        or Most Permanent Address:</font></th>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">Street:</font></td>
+      <td width=95% align="left" colspan="3"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="address2Home" size="35" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5%>&nbsp;</td>
+      <td width=95% align="left" colspan="3"><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="address1Home" value="" size="35" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">City:</font></td>
+      <td width=95% align="left" colspan="3"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="cityHome" size="15" maxlength="15" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">State:</font></td>
+      <td width=10% align="left"><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="StateHome" value="TX" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td width=5% align="left"><font face="Arial, Helvetica, sans-serif">Zip:</font></td>
+      <td width=80% align="left"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="ZipHome" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">Phone:</font></td>
+      <td width=95% colspan="3" align="left"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PhoneHome" size="15" maxlength="15" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table width=100% cellspacing=1 border=0>
+    <tr> 
+      <th colspan="4" align="left"><font face="Arial, Helvetica, sans-serif">Current 
+        Address (leave blank if same as home address):</font></th>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">Street:</font></td>
+      <td width=95% align="left" colspan="3"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="address2Curr" size="35" maxlength="35" onfocus="this.select();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right">&nbsp;</td>
+      <td width=95% align="left" colspan="3"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="address1Curr" size="35" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">City:</font></td>
+      <td width=95% align="left" colspan="3"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="cityCurr" size="15" maxlength="15" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">State:</font></td>
+      <td width=10% align="left"><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="StateCurr" value="TX" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">Zip:</font></td>
+      <td width=80% align="left"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="ZipCurr" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td width=5% align="right"><font face="Arial, Helvetica, sans-serif">Phone:</font></td>
+      <td width=95% align="left" colspan="3"> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PhoneCurr" size="15" maxlength="15" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table cellpadding="0" cellspacing=0 border=1>
+    <tr> 
+    <tr> 
+      <td colspan="5"><font face="Arial, Helvetica, sans-serif"><strong>Education</strong> 
+        - <i>List current or most recent first.</i></font></td>
+    </tr>
+    <tr> 
+      <td align="center"><font face="Arial, Helvetica, sans-serif">College or 
+        University</font></td>
+      <td align="center"><font face="Arial, Helvetica, sans-serif">Major Field 
+        of Study</font></td>
+      <td align="center"><font face="Arial, Helvetica, sans-serif">Degree</font></td>
+      <td align="center"><font face="Arial, Helvetica, sans-serif">Month/Year</font></td>
+      <td align="center"><font face="Arial, Helvetica, sans-serif">Years Attended</font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="University1" value="University of Houston" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="Curriculum1" size="1" onChange="IndicateChange();">
+          <option value="-" selected>Please Select</option>
+          <option value="Aerospace">Aerospace</option>
+          <option value="Agricultural">Agricultural</option>
+          <option value="Chemical">Chemical</option>
+          <option value="Civil">Civil</option>
+          <option value="Computer eng'g">Computer eng'g</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Engineering science">Engineering science</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Mining">Mining</option>
+          <option value="Metallurgical">Metallurgical</option>
+          <option value="Nuclear">Nuclear</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Other">Other</option>
+        </select>
+        Other: 
+        <input type="text" name="CurriculumOther1" value="" size="10" maxlength="20" onChange="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PrevDegree1" value="Bachelor" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="DegreeMonth1" size="1" onChange="IndicateChange();">
+          <option value=" 1" selected> 1</option>
+          <option value=" 2"> 2</option>
+          <option value=" 3"> 3</option>
+          <option value=" 4"> 4</option>
+          <option value=" 5"> 5</option>
+          <option value=" 6"> 6</option>
+          <option value=" 7"> 7</option>
+          <option value=" 8"> 8</option>
+          <option value=" 9"> 9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <input type="text" name="DegreeYear1" size="4" maxlength="4" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="YearsAttended1" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="University2" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="Curriculum2" size="1" onChange="IndicateChange();">
+          <option value=""></option>
+          <option value="Aerospace">Aerospace</option>
+          <option value="Agricultural">Agricultural</option>
+          <option value="Chemical">Chemical</option>
+          <option value="Civil">Civil</option>
+          <option value="Computer eng'g">Computer eng'g</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Engineering science">Engineering science</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Mining">Mining</option>
+          <option value="Metallurgical">Metallurgical</option>
+          <option value="Nuclear">Nuclear</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Other">Other</option>
+        </select>
+        Other: 
+        <input type="text" name="CurriculumOther2" size="10" maxlength="20" onChange="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PrevDegree2" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="DegreeMonth2" size="1" onChange="IndicateChange();">
+          <option value=" 1"> 1</option>
+          <option value=" 2"> 2</option>
+          <option value=" 3"> 3</option>
+          <option value=" 4"> 4</option>
+          <option value=" 5"> 5</option>
+          <option value=" 6"> 6</option>
+          <option value=" 7"> 7</option>
+          <option value=" 8"> 8</option>
+          <option value=" 9"> 9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <input type="text" name="DegreeYear2" size="4" maxlength="4" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="YearsAttended2" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="University3" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="Curriculum3" size="1" onChange="IndicateChange();">
+          <option value=""></option>
+          <option value="Aerospace">Aerospace</option>
+          <option value="Agricultural">Agricultural</option>
+          <option value="Chemical">Chemical</option>
+          <option value="Civil">Civil</option>
+          <option value="Computer eng'g">Computer eng'g</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Engineering science">Engineering science</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Mining">Mining</option>
+          <option value="Metallurgical">Metallurgical</option>
+          <option value="Nuclear">Nuclear</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Other">Other</option>
+        </select>
+        Other: 
+        <input type="text" name="CurriculumOther3" size="10" maxlength="20" onChange="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PrevDegree3" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="DegreeMonth3" size="1" onChange="IndicateChange();">
+          <option value=" 1"> 1</option>
+          <option value=" 2"> 2</option>
+          <option value=" 3"> 3</option>
+          <option value=" 4"> 4</option>
+          <option value=" 5"> 5</option>
+          <option value=" 6"> 6</option>
+          <option value=" 7"> 7</option>
+          <option value=" 8"> 8</option>
+          <option value=" 9"> 9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <input type="text" name="DegreeYear3" size="4" maxlength="4" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="YearsAttended3" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="University4" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="Curriculum4" size="1" onChange="IndicateChange();">
+          <option value=""></option>
+          <option value="Aerospace">Aerospace</option>
+          <option value="Agricultural">Agricultural</option>
+          <option value="Chemical">Chemical</option>
+          <option value="Civil">Civil</option>
+          <option value="Computer eng'g">Computer eng'g</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Engineering science">Engineering science</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Mining">Mining</option>
+          <option value="Metallurgical">Metallurgical</option>
+          <option value="Nuclear">Nuclear</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Other">Other</option>
+        </select>
+        Other: 
+        <input type="text" name="CurriculumOther4" size="10" maxlength="20" onChange="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PrevDegree4" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="DegreeMonth4" size="1" onChange="IndicateChange();">
+          <option value=" 1"> 1</option>
+          <option value=" 2"> 2</option>
+          <option value=" 3"> 3</option>
+          <option value=" 4"> 4</option>
+          <option value=" 5"> 5</option>
+          <option value=" 6"> 6</option>
+          <option value=" 7"> 7</option>
+          <option value=" 8"> 8</option>
+          <option value=" 9"> 9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <input type="text" name="DegreeYear4" size="4" maxlength="4" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="YearsAttended4" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="University5" maxlength="35" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="Curriculum5" size="1" onChange="IndicateChange();">
+          <option value=""></option>
+          <option value="Aerospace">Aerospace</option>
+          <option value="Agricultural">Agricultural</option>
+          <option value="Chemical">Chemical</option>
+          <option value="Civil">Civil</option>
+          <option value="Computer eng'g">Computer eng'g</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Engineering science">Engineering science</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Mining">Mining</option>
+          <option value="Metallurgical">Metallurgical</option>
+          <option value="Nuclear">Nuclear</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Other">Other</option>
+        </select>
+        Other: 
+        <input type="text" name="CurriculumOther5" size="10" maxlength="20" onChange="IndicateChange();">
+        </font></td>
+      <td><font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="PrevDegree5" size="10" maxlength="10" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td align="center"> <font face="Arial, Helvetica, sans-serif"> 
+        <select name="DegreeMonth5" size="1" onChange="IndicateChange();">
+          <option value=" 1"> 1</option>
+          <option value=" 2"> 2</option>
+          <option value=" 3"> 3</option>
+          <option value=" 4"> 4</option>
+          <option value=" 5"> 5</option>
+          <option value=" 6"> 6</option>
+          <option value=" 7"> 7</option>
+          <option value=" 8"> 8</option>
+          <option value=" 9"> 9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <input type="text" name="DegreeYear5" size="4" maxlength="4" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="YearsAttended5" size="2" maxlength="2" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table width=100% cellspacing=0 border=0>
+    <tr> 
+      <th colspan="2" align="left"><font face="Arial, Helvetica, sans-serif">Other 
+        Honor Societies:</font></th>
+    </tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <textarea name="HonorsInfo" cols="72" rows="3" wrap="soft" onChange="IndicateChange();"></textarea>
+        </font></td>
+    </tr>
+  </table>
+  <table width=100% cellspacing=0 border=0>
+    <tr> 
+      <th colspan="2" align="left"><font face="Arial, Helvetica, sans-serif">Other 
+        Honors:</font></th>
+    </tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <textarea name="OtherHonors" cols="72" rows="3" wrap="soft" onChange="IndicateChange();"></textarea>
+        </font></td>
+    </tr>
+  </table>
+  <table width=100% cellspacing=0 border=0>
+    <tr> 
+      <th colspan="2" align="left"><font face="Arial, Helvetica, sans-serif">Extracurricular 
+        Activities:</font></th>
+    </tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <textarea name="ExtraAct" cols="72" rows="3" wrap="soft" onChange="IndicateChange();"></textarea>
+        </font></td>
+    </tr>
+  </table>
+  <table width=100% cellspacing=1 border=0>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif">Employer, if any:</font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="Employer" value="" size="30" maxlength="30" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif">Position:</font></td>
+      <td> <font face="Arial, Helvetica, sans-serif"> 
+        <input type="text" name="Position" value="" size="25" maxlength="25" onfocus="this.select();" onChange="IndicateChange();">
+        </font></td>
+    </tr>
+  </table>
+  <p> 
+  <table width=100% cellspacing="10" border=0>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif"><strong>Other Information:</strong> 
+        <textarea name="OtherInfo" cols="72" rows="3" wrap="soft" onChange="IndicateChange();"></textarea>
+        </font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif">Please keep the national headquarters 
+        informed when your address changes. Thank you.</font></td>
+    </tr>
+  </table>
+  <p align="center"> <font face="Arial, Helvetica, sans-serif"> 
+    <input type="submit" name="btnAction" value="Submit" width="100">
+    </font> 
+    <center>
+    </center>
+</form>
+<hr width="600" align="left">
+<font face="Arial, Helvetica, sans-serif"><small> Should you have any questions 
+or comments, please contact the one of the officers. <br>
+</small> </font> 
+<form action="Help.cfm" method="post" name="HelpForm">
+</form>
+
+</body>
+</html>
